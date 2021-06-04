@@ -175,36 +175,37 @@ $(document).ready(function () {
         $('#btn-show-content').toggleClass('toggle-map-content');
     });
 
-    /********************** Add to Calendar **********************/
-    var myCalendar = createCalendar({
-        options: {
-            class: '',
-            // You can pass an ID. If you don't, one will be generated for you
-            id: ''
-        },
-        data: {
-            // Event title
-            title: "Ram and Antara's Wedding",
+/********************** Add to Calendar **********************/
+var myCalendar = createCalendar({
+    options: {
+        class: '',
+        // You can pass an ID. If you don't, one will be generated for you
+        id: ''
+    },
+    data: {
+        // Event title
+        title: "Shana and Prashanth's Wedding",
 
-            // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+        // Event start date
+        start: new Date('June 28, 2020 09:00'),
 
-            // Event duration (IN MINUTES)
-            // duration: 120,
+        // Event duration (IN MINUTES)
+        duration: 120,
 
-            // You can also choose to set an end time
-            // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 29, 2017 00:00'),
+        // You can also choose to set an end time
+        // If an end time is set, this will take precedence over duration
+        end: new Date('June 28, 2020 11:00'),
 
-            // Event Address
-            address: 'ITC Fortune Park Hotel, Kolkata',
+        // Event Address
+        address: '2201 Galloway Rd, Bensalem PA 19020',
 
-            // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210."
-        }
-    });
+        // Event Description
+        description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Siva Kumar at  908 720 3956."
+    }
+});
 
-    $('#add-to-cal').html(myCalendar);
+$('#add-to-cal').html(myCalendar);
+
 
 
     /********************** RSVP **********************/
